@@ -1,0 +1,41 @@
+[package]
+name = "ohsol"
+version = "0.1.0"
+edition = "2021"
+authors = ["Chief"]
+description = "Decode Solana program errors with style"
+
+[dependencies]
+# CLI
+clap = { version = "4", features = ["derive", "env"] }
+clap_complete = "4"
+
+# Solana
+solana-sdk = "2.0"
+solana-client = "2.0"
+solana-transaction-status = "2.0"
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+borsh = "0.10"
+
+# Crypto
+sha2 = "0.10"
+
+# Compression (for IDL)
+flate2 = "1"
+
+# Output
+colored = "2"
+comfy-table = "7"
+
+# Errors
+anyhow = "1"
+thiserror = "1"
+
+# Async
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+
+# Parsing
+regex = "1"
