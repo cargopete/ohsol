@@ -4,6 +4,11 @@ version = "0.1.0"
 edition = "2021"
 authors = ["Chief"]
 description = "Decode Solana program errors with style"
+license = "MIT"
+repository = "https://github.com/cargopete/ohsol"
+homepage = "https://github.com/cargopete/ohsol"
+keywords = ["solana", "blockchain", "cli", "error", "decoder"]
+categories = ["command-line-utilities", "development-tools"]
 
 [dependencies]
 # CLI
